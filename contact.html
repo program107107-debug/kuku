@@ -66,19 +66,23 @@
           <div class="left-text">
             <div class="section-heading">
               <h6>Contact</h6>
-              <h2>Let’s talk</h2>
+              <h2>Collaborate with Us</h2>
             </div>
             <p>
               Reach out for partnerships, provider integrations, or operational collaboration.
               We’ll respond with a proposal and timeline after reviewing your request.
             </p>
-            <ul>
-              <li><span>Company</span> KUKU WORLD</li>
-              <li><span>Email</span> support@oncasino-999.com</li>
-              <li><span>Telegram</span> <a href="https://t.me/oncasino777" target="_blank" rel="noreferrer">@oncasino777</a></li>
-              <li><span>Website</span> oncasino-999.com</li>
-              <li><span>Address</span> Sea Urchin Street Town, San Pedro, Ambergris Caye, Belize.</li>
-            </ul>
+            <ul style="color:#ff0000;">
+  <li><span style="color:#ff0000;">Company</span> KUKU WORLD</li>
+  <li><span style="color:#ff0000;">Email</span> support@oncasino-999.com</li>
+  <li><span style="color:#ff0000;">Telegram</span>
+    <a href="https://t.me/oncasino777" target="_blank" rel="noreferrer" style="color:#ff0000;">
+      @oncasino777
+    </a>
+  </li>
+  <li><span style="color:#ff0000;">Website</span> oncasino-999.com</li>
+  <li><span style="color:#ff0000;">Address</span> Sea Urchin Street Town, San Pedro, Ambergris Caye, Belize.</li>
+</ul>
           </div>
         </div>
 
@@ -97,35 +101,39 @@
               </div>
 
               <div class="col-lg-12" style="margin-top:18px;">
-                <form id="contact-form" action="mailto:support@oncasino-999.com" method="post" enctype="text/plain">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <fieldset>
-                        <input type="name" name="name" id="name" placeholder="Your Name*" autocomplete="on" required>
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-6">
-                      <fieldset>
-                        <input type="text" name="surname" id="surname" placeholder="Company / Team*" autocomplete="on" required>
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-12">
-                      <fieldset>
-                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail*" required="">
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-12">
-                      <fieldset>
-                        <textarea name="message" id="message" placeholder="Tell us what you need (integration, partnership, operations)"></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="orange-button">Send Message</button>
-                      </fieldset>
-                    </div>
-                  </div>
-                </form>
+                <form action="mailto:support@oncasino-999.com" method="GET">
+  <div class="row">
+    <div class="col-lg-6">
+      <fieldset>
+        <input type="text" name="name" id="name" placeholder="Your Name*" autocomplete="on" required>
+      </fieldset>
+    </div>
+    <div class="col-lg-6">
+      <fieldset>
+        <input type="text" name="company" id="company" placeholder="Company / Team*" autocomplete="on" required>
+      </fieldset>
+    </div>
+    <div class="col-lg-12">
+      <fieldset>
+        <input type="email" name="from" id="email" placeholder="Your E-mail*" required>
+      </fieldset>
+    </div>
+    <div class="col-lg-12">
+      <fieldset>
+        <textarea name="body" id="message" placeholder="Tell us what you need (integration, partnership, operations)" required></textarea>
+      </fieldset>
+    </div>
+
+    <!-- subject 고정하고 싶으면 hidden 추가 -->
+    <input type="hidden" name="subject" value="[KUKU WORLD] New Contact Message">
+
+    <div class="col-lg-12">
+      <fieldset>
+        <button type="submit" id="form-submit" class="orange-button">Send Message</button>
+      </fieldset>
+    </div>
+  </div>
+</form>
               </div>
 
             </div>
@@ -152,4 +160,5 @@
   <script src="assets/js/custom.js"></script>
 
 </body>
+
 </html>
